@@ -2,7 +2,10 @@
 
 ```bash
 # rsync source destination
-rsync -az source/ login@serveur.org:/destination/
+rsync -az source login@serveur.org:/destination
+
+# Exclude files 
+rsync -az --exclude="nom_de_dossier" source login@serveur.org:/destination
 
 ```
 
