@@ -7,6 +7,15 @@ rsync -az source login@serveur.org:/destination
 # Exclude files 
 rsync -az --exclude="nom_de_dossier" source login@serveur.org:/destination
 
+# Exclusion file
+cat ExclusionRSync
+tmp
+.Trash
+.cache
+.PlayOnLinux
+
+rsync -az --exclude-from=ExclusionRSync source login@serveur.org:/destination
+ 
 ```
 
 ```
