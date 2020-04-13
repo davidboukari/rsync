@@ -1,5 +1,5 @@
 # rsync
 
 ```bash
-# rsync source/ destination/
+# rsync source destination
 ```
